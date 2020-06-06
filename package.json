@@ -2,14 +2,11 @@
   "name": "davimatana",
   "version": "1.0.0",
   "description": "website",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/matananh/davimatana.git"
-  },
+  "repository": "git+ssh://git@github.com/matananh/davimatana.git",
   "keywords": [
     ""
   ],
@@ -18,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/matananh/davimatana/issues"
   },
-  "homepage": "https://github.com/matananh/davimatana#readme"
+  "homepage": "https://github.com/matananh/davimatana#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.5.8"
+  }
 }
