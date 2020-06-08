@@ -16,7 +16,7 @@ function generateToken(params = {}) {
         authConfig.secret,
         {expiresIn: 86400,
     });
-};
+}
 
 router.post('/register', async(req, res) => {
     const {email} = req.body;
@@ -78,7 +78,7 @@ router.post('/forgot_password', async(req, res) => {
         console.log(user.id, token, now);
 
         mailer.sendMail({
-            to: {email},
+            to: email,
             from: 'matananh@gmail.com',
             subject: 'Forgot Password',
             template: 'auth/forgot_password',
